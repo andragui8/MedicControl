@@ -1,0 +1,6 @@
+framework module Pods_MedicControlLOC {
+  umbrella header "Pods-MedicControlLOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

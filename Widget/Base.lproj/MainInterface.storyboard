@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldq-UD-6Gg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uX-pc-sMd">
+                                        <rect key="frame" x="16" y="8" width="288" height="104"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="mE8-bB-vqJ">
+                                                <rect key="frame" x="16" y="39.5" width="256" height="25"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soa-vk-puE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" backgroundImage="hiperfeliz">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonHiperHappyPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="UyF-Bz-8ai"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd6-kI-jNG">
+                                                        <rect key="frame" x="77" y="0.0" width="25" height="25"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" backgroundImage="feliz">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonHappyPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="YW3-GY-J2k"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtL-yJ-yGB">
+                                                        <rect key="frame" x="154" y="0.0" width="25" height="25"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" backgroundImage="triste">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonSadPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="iQg-Ve-Efg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXm-qe-kf3">
+                                                        <rect key="frame" x="231" y="0.0" width="25" height="25"/>
+                                                        <state key="normal" backgroundImage="enfermo"/>
+                                                        <connections>
+                                                            <action selector="buttonHiperSadPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="uUV-Oz-BCi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXW-ZI-X33">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="104"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRACIAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYu-oF-PLj">
+                                                        <rect key="frame" x="90.5" y="8" width="107.5" height="31.5"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="por tu respuesta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51P-sH-S8n">
+                                                        <rect key="frame" x="95.5" y="48" width="97.5" height="23"/>
+                                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="19"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="51P-sH-S8n" firstAttribute="centerX" secondItem="xYu-oF-PLj" secondAttribute="centerX" id="Lra-56-AC2"/>
+                                                    <constraint firstItem="51P-sH-S8n" firstAttribute="top" secondItem="xYu-oF-PLj" secondAttribute="bottom" constant="8.5" id="fEc-Wn-QZJ"/>
+                                                    <constraint firstItem="xYu-oF-PLj" firstAttribute="centerX" secondItem="wXW-ZI-X33" secondAttribute="centerX" id="fgV-hd-FvA"/>
+                                                    <constraint firstItem="xYu-oF-PLj" firstAttribute="top" secondItem="wXW-ZI-X33" secondAttribute="top" constant="8" id="uXK-Cc-VEI"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="mE8-bB-vqJ" firstAttribute="centerY" secondItem="6uX-pc-sMd" secondAttribute="centerY" id="70M-py-1RT"/>
+                                            <constraint firstAttribute="trailing" secondItem="mE8-bB-vqJ" secondAttribute="trailing" constant="16" id="Mdg-hk-L1A"/>
+                                            <constraint firstAttribute="trailing" secondItem="wXW-ZI-X33" secondAttribute="trailing" id="Qkv-jf-FsN"/>
+                                            <constraint firstItem="wXW-ZI-X33" firstAttribute="leading" secondItem="6uX-pc-sMd" secondAttribute="leading" id="SfW-28-xbm"/>
+                                            <constraint firstItem="wXW-ZI-X33" firstAttribute="top" secondItem="6uX-pc-sMd" secondAttribute="top" id="TAT-kK-oTe"/>
+                                            <constraint firstAttribute="bottom" secondItem="wXW-ZI-X33" secondAttribute="bottom" id="XLM-Nc-0Kr"/>
+                                            <constraint firstItem="mE8-bB-vqJ" firstAttribute="leading" secondItem="6uX-pc-sMd" secondAttribute="leading" constant="16" id="mTo-8M-7K5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6uX-pc-sMd" firstAttribute="top" secondItem="ldq-UD-6Gg" secondAttribute="top" constant="8" id="1ah-Hu-qAq"/>
+                                    <constraint firstAttribute="bottom" secondItem="6uX-pc-sMd" secondAttribute="bottom" constant="8" id="UtX-du-nys"/>
+                                    <constraint firstItem="6uX-pc-sMd" firstAttribute="leading" secondItem="ldq-UD-6Gg" secondAttribute="leading" constant="16" id="o6p-hI-6zT"/>
+                                    <constraint firstAttribute="trailing" secondItem="6uX-pc-sMd" secondAttribute="trailing" constant="16" id="seA-pW-7fG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ldq-UD-6Gg" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="1Ip-j6-JC7"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="ldq-UD-6Gg" secondAttribute="trailing" id="2nq-7U-dYr"/>
+                            <constraint firstAttribute="bottom" secondItem="ldq-UD-6Gg" secondAttribute="bottom" id="5tz-Jx-FLw"/>
+                            <constraint firstItem="ldq-UD-6Gg" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="QAO-zc-Ndm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="120"/>
+                    <connections>
+                        <outlet property="buttonHappy" destination="yd6-kI-jNG" id="Hwu-3J-sls"/>
+                        <outlet property="buttonHiperHappy" destination="soa-vk-puE" id="R6g-87-oOH"/>
+                        <outlet property="buttonHiperSad" destination="yXm-qe-kf3" id="G4D-ae-Cac"/>
+                        <outlet property="buttonSad" destination="FtL-yJ-yGB" id="y1a-xC-uUt"/>
+                        <outlet property="viewAnswer" destination="wXW-ZI-X33" id="EKd-cB-sHU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38.399999999999999" y="25.187406296851577"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="enfermo" width="25" height="25"/>
+        <image name="feliz" width="25" height="25"/>
+        <image name="hiperfeliz" width="25" height="25"/>
+        <image name="triste" width="25" height="25"/>
+    </resources>
+</document>
