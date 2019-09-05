@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RSSTableViewCell" customModule="MedicControlLOC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9m-iP-C6z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título de la noticia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNx-dV-rV2">
+                        <rect key="frame" x="16" y="8" width="288" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esto pretende ser el comienzo de la entradilla o una descripción de la noticia. Es posible que no quepa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhb-BD-myN">
+                        <rect key="frame" x="16" y="38" width="288" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bNx-dV-rV2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="34n-hd-u5g"/>
+                    <constraint firstItem="S9m-iP-C6z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="F9s-xF-igN"/>
+                    <constraint firstItem="hhb-BD-myN" firstAttribute="top" secondItem="bNx-dV-rV2" secondAttribute="bottom" constant="8" id="HRc-JM-cU7"/>
+                    <constraint firstAttribute="trailing" secondItem="S9m-iP-C6z" secondAttribute="trailing" id="I74-DC-rpm"/>
+                    <constraint firstItem="bNx-dV-rV2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Kb9-Qa-9YZ"/>
+                    <constraint firstItem="hhb-BD-myN" firstAttribute="trailing" secondItem="bNx-dV-rV2" secondAttribute="trailing" id="NxZ-nU-X3b"/>
+                    <constraint firstItem="S9m-iP-C6z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rng-YZ-wPm"/>
+                    <constraint firstItem="hhb-BD-myN" firstAttribute="leading" secondItem="bNx-dV-rV2" secondAttribute="leading" id="Umj-Op-qPB"/>
+                    <constraint firstAttribute="bottom" secondItem="S9m-iP-C6z" secondAttribute="bottom" id="dgS-Pm-1ev"/>
+                    <constraint firstAttribute="trailing" secondItem="bNx-dV-rV2" secondAttribute="trailing" constant="16" id="gGJ-5l-hJX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="S9m-iP-C6z" id="QV4-b0-u4T"/>
+                <outlet property="backgroundView" destination="S9m-iP-C6z" id="dkO-f0-Meu"/>
+                <outlet property="subtitleNewsLabel" destination="hhb-BD-myN" id="EI9-yt-6Ae"/>
+                <outlet property="titleNews" destination="bNx-dV-rV2" id="yJu-WS-boB"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

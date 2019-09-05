@@ -32,7 +32,7 @@ final class MedicinesDetailInteractor: BaseInteractor<MedicinesDetailPresenterPr
     fileprivate func addMedicineToUserAction(dto: MedicineUserInsertServiceDTO) {
         let provider = MedicinesProvider()
         provider.insertMedicineIntoUser(dto: dto, success: { message in
-            print(message)
+            print(message ?? "")
         }, failure: { error in
             print(error)
         })

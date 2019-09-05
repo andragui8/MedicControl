@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeUserView" customModule="MedicControlLOC" customModuleProvider="target">
             <connections>
                 <outlet property="labelUser" destination="wLO-0f-SYP" id="Bx3-sn-Ue9"/>
+                <outlet property="tableView" destination="A8T-Jz-EwQ" id="Wj4-tq-IVx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="x4H-ry-a8n"/>
             </connections>
         </placeholder>
@@ -37,14 +38,22 @@
                                 <constraint firstAttribute="height" constant="44" id="pm3-hr-J1g"/>
                             </constraints>
                         </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A8T-Jz-EwQ">
+                            <rect key="frame" x="0.0" y="44" width="375" height="690"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="wLO-0f-SYP" firstAttribute="top" secondItem="FkU-VK-DXg" secondAttribute="bottom" constant="263" id="1s6-qb-Z1w"/>
+                        <constraint firstAttribute="bottom" secondItem="A8T-Jz-EwQ" secondAttribute="bottom" id="3mI-KV-EcA"/>
                         <constraint firstItem="wLO-0f-SYP" firstAttribute="centerX" secondItem="FkU-VK-DXg" secondAttribute="centerX" id="6eI-Vd-PkX"/>
                         <constraint firstItem="FkU-VK-DXg" firstAttribute="top" secondItem="Tle-zY-FiO" secondAttribute="top" id="JNb-eC-R5V"/>
+                        <constraint firstItem="A8T-Jz-EwQ" firstAttribute="leading" secondItem="Tle-zY-FiO" secondAttribute="leading" id="KxY-lv-ntu"/>
                         <constraint firstAttribute="trailing" secondItem="FkU-VK-DXg" secondAttribute="trailing" id="RPX-VW-eIP"/>
                         <constraint firstItem="FkU-VK-DXg" firstAttribute="leading" secondItem="Tle-zY-FiO" secondAttribute="leading" id="jKP-5V-k6B"/>
+                        <constraint firstAttribute="trailing" secondItem="A8T-Jz-EwQ" secondAttribute="trailing" id="pZ2-sQ-egO"/>
+                        <constraint firstItem="A8T-Jz-EwQ" firstAttribute="top" secondItem="FkU-VK-DXg" secondAttribute="bottom" id="vEf-c8-msr"/>
                     </constraints>
                 </view>
             </subviews>

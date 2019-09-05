@@ -23,12 +23,6 @@ class MedicinesTableViewCell: UITableViewCell {
         self.containerView.layer.cornerRadius = 4
         MedicControlUtils.applyShadow(view: self.containerView)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     func configureCell(medicine: MedicinesUserModel?) {
         self.medicine = medicine
@@ -43,7 +37,6 @@ class MedicinesTableViewCell: UITableViewCell {
         self.imageViewCell.image = nil
         self.labelTitleMedicine.text = ""
         self.labelDescription.text = ""
-        
     }
     
 }

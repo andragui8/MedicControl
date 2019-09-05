@@ -51,7 +51,7 @@ final class MedicinesInteractor: BaseInteractor<MedicinesPresenterProtocol>, Med
         
         let provider = MedicinesProvider()
         provider.insertMedicine(dto: dto, success: { message in
-            print(message)
+            print(message ?? "")
         }, failure: { error in
             print(error)
         })

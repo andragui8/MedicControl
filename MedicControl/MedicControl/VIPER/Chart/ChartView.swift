@@ -104,7 +104,7 @@ extension ChartView: BaseViewControllerRefresh {
     }
     
     func i18N() {
-        self.title = "Chart"
+        self.title = "Emociones"
     }
     
     func initializeUI() {

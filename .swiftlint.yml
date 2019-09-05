@@ -1,0 +1,30 @@
+disabled_rules:
+    - trailing_whitespace
+    - function_body_length
+    - type_body_length
+    - file_length
+excluded:
+    - Carthage
+    - Pods
+opt_in_rules:
+    - explicit_init
+    - implicit_return
+    - joined_default_parameter
+    - nimble_operator
+    - operator_usage_whitespace
+    - redundant_nil_coalescing
+    - unneeded_parentheses_in_closure_argument
+    - closure_spacing
+line_length:
+    - 300 # warning
+    - 400 # error
+vertical_whitespace:
+    max_empty_lines: 1
+identifier_name:
+    min_length:
+        error: 3
+    excluded:
+        - id
+        - i
+cyclomatic_complexity:
+  error: 30

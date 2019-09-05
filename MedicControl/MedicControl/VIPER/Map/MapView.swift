@@ -16,9 +16,20 @@ class MapView: BaseView<MapPresenterProtocol>, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var viewTitleMap: UIView!
     @IBOutlet weak var viewUserLocationButton: UIView!
-    @IBOutlet weak var buttonGetUserLocation: UIButton!
+	@IBOutlet weak var buttonGetUserLocation: UIButton!
     
-    // MARK: Fileprivate Variables all variables must be for internal use, we should only have access to controls from the presenter
+	@IBOutlet weak var detailView: UIView! {
+		didSet {
+			detailView.layer.cornerRadius = 4
+			detailView.layer.borderWidth = 2
+			detailView.layer.borderColor = #colorLiteral(red: 0, green: 0.5567334294, blue: 0.001050410792, alpha: 1)
+		}
+	}
+	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var subtitleLabel: UILabel!
+	
+	var annotationSelected: MKAnnotation?
+	// MARK: Fileprivate Variables all variables must be for internal use, we should only have access to controls from the presenter
     
     // MARK: UIViewController Functions
     override func viewDidLoad() {
@@ -31,13 +42,25 @@ class MapView: BaseView<MapPresenterProtocol>, MKMapViewDelegate {
         //self.navigationController?.navigationItem.rightBarButtonItems = [add]
         self.presenter?.mapViewDidLoad()
         self.mapView.delegate = self
+		self.detailView.isHidden = true
     }
     
     // MARK: IBActions declaration of all the controls
     @IBAction func searchCurrentLocation(_ sender: Any) {
         self.presenter?.getCurrentLocation()
     }
-    
+	
+	@IBAction func goButtonTapped(_ sender: Any) {
+		if let coordinate = self.annotationSelected?.coordinate {
+			let route = "http://maps.apple.com/?q=\(coordinate.latitude),\(coordinate.longitude)"
+			if(UIApplication.shared.canOpenURL(URL(string: route)!)) {
+				UIApplication.shared.open(URL(string: route)!, options: [:], completionHandler: nil)
+			} else {
+				NSLog("Can't use Apple Maps")
+			}
+		}
+	}
+	
     @objc func addPharmacyTapped() {
         self.presenter?.createPharmacyItemAlert()
     }
@@ -89,9 +112,36 @@ class MapView: BaseView<MapPresenterProtocol>, MKMapViewDelegate {
         return annotationView
     }
     
-    @objc fileprivate func didTapPin(onMap: MKMapView) {
-        
-    }
+	func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+		
+		UIView.animate(withDuration: 0.4, animations: {
+			let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.0025, longitudeDelta: 0.0025 )
+			let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(view.annotation!.coordinate.latitude - 0.0005, view.annotation!.coordinate.longitude)
+			let region = MKCoordinateRegion(center: location, span: span)
+			self.mapView.setRegion(region, animated: true)
+			
+		}, completion: nil)
+		
+		if view.annotation is MKUserLocation {
+			
+		} else {
+			let annotation = view.annotation as? PharmacyAnnotation
+			self.annotationSelected = annotation
+			self.detailView.isHidden = false
+			self.titleLabel.text = annotation?.title
+			self.subtitleLabel.text = annotation?.subtitle
+		}
+		
+		
+	}
+	
+	func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+		self.detailView.isHidden = true
+		self.titleLabel.text = ""
+		self.subtitleLabel.text = ""
+		self.annotationSelected = nil
+	}
+		
 }
 
 // MARK: Extensions declaration of all extension and implementations of protocols 
@@ -117,7 +167,7 @@ extension MapView: BaseViewControllerRefresh {
         let origImage = #imageLiteral(resourceName: "ico-localizacion")
         let tintedImage = origImage.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         self.buttonGetUserLocation.setImage(tintedImage, for: .normal)
-        self.buttonGetUserLocation.tintColor = UIColor.gray
+        self.buttonGetUserLocation.tintColor = #colorLiteral(red: 0, green: 0.5567334294, blue: 0.001050410792, alpha: 1)
     }
 }
 

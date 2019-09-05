@@ -11,7 +11,7 @@ import UIKit
 
 final class ChartAssembly: BaseAssembly {
     
-    static func chartPresenterNavigationController(chartDTO: ChartDTO? = ChartDTO()) -> UINavigationController {
+    static func chartPresenterNavigationController(chartDTO: ChartDTO? = nil) -> UINavigationController {
         let navigationController = UINavigationController(rootViewController: chartPresenterView(chartDTO: chartDTO))
         return navigationController
     }

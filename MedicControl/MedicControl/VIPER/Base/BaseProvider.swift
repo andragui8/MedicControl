@@ -52,6 +52,11 @@ class BaseProvider {
         let manager = getManager()
         return manager?.child("medicines")
     }
+	
+	internal func getReferenceForNews() -> DatabaseReference? {
+		let manager = getManager()
+		return manager?.child("news")
+	}
     
     internal func getReferenceForUserMedicines() -> DatabaseReference? {
         let manager = getManager()

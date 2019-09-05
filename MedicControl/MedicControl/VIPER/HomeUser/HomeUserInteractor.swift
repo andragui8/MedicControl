@@ -10,17 +10,22 @@ import Foundation
 import UIKit
 
 protocol HomeUserInteractorProtocol: AnyObject {
-    func getHomeUserData()
+	func getNews(success: @escaping ([NewsModel]) -> Void)
 }
 
 final class HomeUserInteractor: BaseInteractor<HomeUserPresenterProtocol>, HomeUserInteractorProtocol {
     // MARK: Internal functions declaration of all functions and protocol variables
-    internal func getHomeUserData() {
-        self.getHomeUserDataAction()
-    }
+	
+	internal func getNews(success: @escaping ([NewsModel]) -> Void) {
+		self.getNewsAction(success: success)
+	}
     
     // MARK: Fileprivate functions declaration of all functions that return something to the protocol or perform an activity that should not be exposed
-    fileprivate func getHomeUserDataAction() {
-        
-    }
+	
+	fileprivate func getNewsAction(success: @escaping ([NewsModel]) -> Void) {
+		let provider = NewsProvider()
+		provider.getNews(success: success, failure: { error in
+			print(error)
+		})
+	}
 }

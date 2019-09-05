@@ -28,7 +28,6 @@ class MedicinesView: BaseView<MedicinesPresenterProtocol>, UITableViewDelegate, 
         self.tableView.delegate = self
         
         self.presenter?.medicinesViewDidLoad()
-        
     }
     
     // MARK: IBActions declaration of all the controls
@@ -60,6 +59,7 @@ class MedicinesView: BaseView<MedicinesPresenterProtocol>, UITableViewDelegate, 
         guard let medicinesCell = cell else {
             return UITableViewCell()
         }
+		cell?.selectionStyle = .none
         let medicine = self.presenter?.medicinesFromUser[indexPath.row]
         medicinesCell.configureCell(medicine: medicine ?? nil)
         return medicinesCell
@@ -82,7 +82,7 @@ extension MedicinesView: BaseViewControllerRefresh {
     }
     
     func i18N() {
-        self.title = "Medicines"
+        self.title = "Botiquín"
     }
     
     func initializeUI() {

@@ -38,7 +38,7 @@ class TabBarViewController: UITabBarController {
                                             fourthTabNavigationControoller]
         
         let item1 = UITabBarItem(title: "Botiquín", image: #imageLiteral(resourceName: "ico-pastilla"), tag: 0)
-        let item2 = UITabBarItem(title: "Estado de ánimo", image: #imageLiteral(resourceName: "ico-grafico"), tag: 1)
+        let item2 = UITabBarItem(title: "Emociones", image: #imageLiteral(resourceName: "ico-grafico"), tag: 1)
         let item3 = UITabBarItem(title: "Noticias", image: #imageLiteral(resourceName: "ico-news"), tag: 2)
         let item4 = UITabBarItem(title: "Mapa", image: #imageLiteral(resourceName: "ico-mapa"), tag: 3)
 //        let item5 = UITabBarItem(title: "Chat", image: #imageLiteral(resourceName: "ico-chat"), tag: 4)
@@ -49,7 +49,7 @@ class TabBarViewController: UITabBarController {
         fourthTabNavigationControoller.tabBarItem = item4
 //        fifthTabNavigationController.tabBarItem = item5
         
-        UITabBar.appearance().tintColor = UIColor(red: 0 / 255.0, green: 146 / 255.0, blue: 248 / 255.0, alpha: 1.0)
+        UITabBar.appearance().tintColor = #colorLiteral(red: 0, green: 0.5567334294, blue: 0.001050410792, alpha: 1)
         
         tabBarViewController?.selectedIndex = 2
         

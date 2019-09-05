@@ -11,5 +11,5 @@ import UIKit
 
 //Struct that represents the transfer object of Chart
 struct ChartDTO {
-    let chartModel: ChartModel? = ChartModel()
+    let chartModel: ChartModel?
 }

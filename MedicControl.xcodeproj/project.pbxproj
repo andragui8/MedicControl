@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		174FBCF0E79ADC4449A0235A /* Pods_MedicControlLOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BF93EC299D940EB38EA54E /* Pods_MedicControlLOC.framework */; };
-		32AB4F01BD0C265B70160D4A /* Pods_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86325577744317CEA8057799 /* Pods_Widget.framework */; };
 		41013D5D21A46AED00103513 /* HomeUserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41013D5121A46AED00103513 /* HomeUserDTO.swift */; };
 		41013D5E21A46AED00103513 /* HomeUserView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41013D5321A46AED00103513 /* HomeUserView_iPad.xib */; };
 		41013D5F21A46AED00103513 /* HomeUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41013D5421A46AED00103513 /* HomeUserView.xib */; };
@@ -24,6 +22,8 @@
 		412910C221A32EAB00D38E61 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412910C021A32EAB00D38E61 /* MainInterface.storyboard */; };
 		412910C621A32EAB00D38E61 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 412910BA21A32EAB00D38E61 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		412F9CAE224E8154006C0F0B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F9CAC224E8154006C0F0B /* TabBarViewController.swift */; };
+		413D495E23217E1100EF12EB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D495D23217E1100EF12EB /* NewsModel.swift */; };
+		413D49602321B64500EF12EB /* NewsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D495F2321B64500EF12EB /* NewsProvider.swift */; };
 		4169B8872250E90C00F6E9AA /* MapDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4169B87B2250E90C00F6E9AA /* MapDTO.swift */; };
 		4169B8882250E90C00F6E9AA /* MapView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4169B87D2250E90C00F6E9AA /* MapView_iPad.xib */; };
 		4169B8892250E90C00F6E9AA /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4169B87E2250E90C00F6E9AA /* MapView.xib */; };
@@ -112,6 +112,8 @@
 		4192E88122898D910042B03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41778060219DCAF700901EB0 /* Assets.xcassets */; };
 		419464C0218471F100D86426 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419464BF218471F100D86426 /* UIKit.framework */; };
 		419464C2218471F100D86426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419464C1218471F100D86426 /* Foundation.framework */; };
+		41BA02F1231DC31C004415B3 /* RSSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA02EF231DC31C004415B3 /* RSSTableViewCell.swift */; };
+		41BA02F2231DC31C004415B3 /* RSSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BA02F0231DC31C004415B3 /* RSSTableViewCell.xib */; };
 		41D317E822671F5000DB41A7 /* ChartDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D317DC22671F5000DB41A7 /* ChartDTO.swift */; };
 		41D317E922671F5000DB41A7 /* ChartView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D317DE22671F5000DB41A7 /* ChartView_iPad.xib */; };
 		41D317EA22671F5000DB41A7 /* ChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D317DF22671F5000DB41A7 /* ChartView.xib */; };
@@ -123,6 +125,8 @@
 		41D317F022671F5000DB41A7 /* ChartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D317E622671F5000DB41A7 /* ChartRouter.swift */; };
 		41D317F122671F5000DB41A7 /* ChartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D317E722671F5000DB41A7 /* ChartInteractor.swift */; };
 		41D317F5226BD00C00DB41A7 /* LineChartFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D317F4226BD00C00DB41A7 /* LineChartFormatter.swift */; };
+		7BACC5ECD8F2DCC30D9F5512 /* Pods_MedicControlLOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DD372EB8C3031DB7801E51 /* Pods_MedicControlLOC.framework */; };
+		E41DFDE83186FD8E988EB75A /* Pods_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6264716E3100A904CC7D264 /* Pods_Widget.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,8 +154,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F3D1099E5AAA6777F801376 /* Pods-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.release.xcconfig"; sourceTree = "<group>"; };
-		19E0852FF3C717B26B244B39 /* Pods-MedicControlLOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicControlLOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicControlLOC/Pods-MedicControlLOC.debug.xcconfig"; sourceTree = "<group>"; };
+		09D4F5853D783644FCD5A7EF /* Pods-MedicControlLOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicControlLOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicControlLOC/Pods-MedicControlLOC.debug.xcconfig"; sourceTree = "<group>"; };
+		28DD372EB8C3031DB7801E51 /* Pods_MedicControlLOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicControlLOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41013D5121A46AED00103513 /* HomeUserDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUserDTO.swift; sourceTree = "<group>"; };
 		41013D5321A46AED00103513 /* HomeUserView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeUserView_iPad.xib; sourceTree = "<group>"; };
 		41013D5421A46AED00103513 /* HomeUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeUserView.xib; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 		412910C121A32EAB00D38E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		412910C321A32EAB00D38E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		412F9CAC224E8154006C0F0B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		413D495D23217E1100EF12EB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		413D495F2321B64500EF12EB /* NewsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsProvider.swift; sourceTree = "<group>"; };
 		4169B87B2250E90C00F6E9AA /* MapDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDTO.swift; sourceTree = "<group>"; };
 		4169B87D2250E90C00F6E9AA /* MapView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView_iPad.xib; sourceTree = "<group>"; };
 		4169B87E2250E90C00F6E9AA /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
@@ -262,6 +268,8 @@
 		419464BC218471F100D86426 /* MedicControlLOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicControlLOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419464BF218471F100D86426 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		419464C1218471F100D86426 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		41BA02EF231DC31C004415B3 /* RSSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSTableViewCell.swift; sourceTree = "<group>"; };
+		41BA02F0231DC31C004415B3 /* RSSTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSSTableViewCell.xib; sourceTree = "<group>"; };
 		41D317DC22671F5000DB41A7 /* ChartDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDTO.swift; sourceTree = "<group>"; };
 		41D317DE22671F5000DB41A7 /* ChartView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartView_iPad.xib; sourceTree = "<group>"; };
 		41D317DF22671F5000DB41A7 /* ChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartView.xib; sourceTree = "<group>"; };
@@ -274,10 +282,10 @@
 		41D317E722671F5000DB41A7 /* ChartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartInteractor.swift; sourceTree = "<group>"; };
 		41D317F4226BD00C00DB41A7 /* LineChartFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartFormatter.swift; sourceTree = "<group>"; };
 		41D5198D227CAF7800FE070C /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
-		86325577744317CEA8057799 /* Pods_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87BF93EC299D940EB38EA54E /* Pods_MedicControlLOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicControlLOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF11B7877145B58469121C84 /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
-		EB6AB619919907201A58826C /* Pods-MedicControlLOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicControlLOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicControlLOC/Pods-MedicControlLOC.release.xcconfig"; sourceTree = "<group>"; };
+		4BEE9DB4B1EDF5FB2D9DBE0C /* Pods-MedicControlLOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicControlLOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicControlLOC/Pods-MedicControlLOC.release.xcconfig"; sourceTree = "<group>"; };
+		C6264716E3100A904CC7D264 /* Pods_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1E3F7FC75A9A1CBF3AC120 /* Pods-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.release.xcconfig"; sourceTree = "<group>"; };
+		F639F4BC11BA19950FBADB60 /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,7 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				412910BC21A32EAB00D38E61 /* NotificationCenter.framework in Frameworks */,
-				32AB4F01BD0C265B70160D4A /* Pods_Widget.framework in Frameworks */,
+				E41DFDE83186FD8E988EB75A /* Pods_Widget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +304,7 @@
 			files = (
 				419464C0218471F100D86426 /* UIKit.framework in Frameworks */,
 				419464C2218471F100D86426 /* Foundation.framework in Frameworks */,
-				174FBCF0E79ADC4449A0235A /* Pods_MedicControlLOC.framework in Frameworks */,
+				7BACC5ECD8F2DCC30D9F5512 /* Pods_MedicControlLOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +314,7 @@
 		41013D4F21A46AED00103513 /* HomeUser */ = {
 			isa = PBXGroup;
 			children = (
+				41BA02EE231DC2FB004415B3 /* Cell */,
 				41013D5521A46AED00103513 /* HomeUserAssembly.swift */,
 				41013D5721A46AED00103513 /* HomeUserRouter.swift */,
 				41013D5C21A46AED00103513 /* HomeUserInteractor.swift */,
@@ -340,6 +349,7 @@
 			children = (
 				41013D5921A46AED00103513 /* HomeUserModelEntity.swift */,
 				41013D5A21A46AED00103513 /* HomeUserModel.swift */,
+				413D495D23217E1100EF12EB /* NewsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -410,6 +420,7 @@
 			children = (
 				4169B8BA225384A000F6E9AA /* MedicinesProvider.swift */,
 				4169B8992252107200F6E9AA /* MapProvider.swift */,
+				413D495F2321B64500EF12EB /* NewsProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -688,7 +699,7 @@
 				412910BD21A32EAB00D38E61 /* Widget */,
 				419464BE218471F100D86426 /* Frameworks */,
 				419464BD218471F100D86426 /* Products */,
-				D5EA0D4E798B5F415C0523DA /* Pods */,
+				B6F69D74F6E3FE42C496D02F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -707,10 +718,19 @@
 				419464BF218471F100D86426 /* UIKit.framework */,
 				419464C1218471F100D86426 /* Foundation.framework */,
 				412910BB21A32EAB00D38E61 /* NotificationCenter.framework */,
-				87BF93EC299D940EB38EA54E /* Pods_MedicControlLOC.framework */,
-				86325577744317CEA8057799 /* Pods_Widget.framework */,
+				28DD372EB8C3031DB7801E51 /* Pods_MedicControlLOC.framework */,
+				C6264716E3100A904CC7D264 /* Pods_Widget.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41BA02EE231DC2FB004415B3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				41BA02EF231DC31C004415B3 /* RSSTableViewCell.swift */,
+				41BA02F0231DC31C004415B3 /* RSSTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		41D317DA22671F5000DB41A7 /* Chart */ = {
@@ -755,13 +775,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D5EA0D4E798B5F415C0523DA /* Pods */ = {
+		B6F69D74F6E3FE42C496D02F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				19E0852FF3C717B26B244B39 /* Pods-MedicControlLOC.debug.xcconfig */,
-				EB6AB619919907201A58826C /* Pods-MedicControlLOC.release.xcconfig */,
-				BF11B7877145B58469121C84 /* Pods-Widget.debug.xcconfig */,
-				0F3D1099E5AAA6777F801376 /* Pods-Widget.release.xcconfig */,
+				09D4F5853D783644FCD5A7EF /* Pods-MedicControlLOC.debug.xcconfig */,
+				4BEE9DB4B1EDF5FB2D9DBE0C /* Pods-MedicControlLOC.release.xcconfig */,
+				F639F4BC11BA19950FBADB60 /* Pods-Widget.debug.xcconfig */,
+				DE1E3F7FC75A9A1CBF3AC120 /* Pods-Widget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -773,7 +793,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 412910C921A32EAB00D38E61 /* Build configuration list for PBXNativeTarget "Widget" */;
 			buildPhases = (
-				005DEF0142BB362F496231C4 /* [CP] Check Pods Manifest.lock */,
+				07415B0943F6CB1A968D47B0 /* [CP] Check Pods Manifest.lock */,
 				412910B621A32EAB00D38E61 /* Sources */,
 				412910B721A32EAB00D38E61 /* Frameworks */,
 				412910B821A32EAB00D38E61 /* Resources */,
@@ -791,13 +811,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 419464D1218471F100D86426 /* Build configuration list for PBXNativeTarget "MedicControlLOC" */;
 			buildPhases = (
-				F1EC15C79923C142308AF323 /* [CP] Check Pods Manifest.lock */,
+				EE99A580B936A514638E70D5 /* [CP] Check Pods Manifest.lock */,
 				419464B8218471F100D86426 /* Sources */,
 				419464B9218471F100D86426 /* Frameworks */,
 				419464BA218471F100D86426 /* Resources */,
 				412910CA21A32EAB00D38E61 /* Embed App Extensions */,
 				412F9CAA224E35D6006C0F0B /* ShellScript */,
-				B5585BDCA68B260F24DE0274 /* [CP] Embed Pods Frameworks */,
+				8EE417B85D889C539973154C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -880,6 +900,7 @@
 				41013D5F21A46AED00103513 /* HomeUserView.xib in Resources */,
 				4169B8EA22554F6B00F6E9AA /* MedicinesDetailView.xib in Resources */,
 				4169B8AC2253537400F6E9AA /* MedicinesView.xib in Resources */,
+				41BA02F2231DC31C004415B3 /* RSSTableViewCell.xib in Resources */,
 				41778061219DCAF700901EB0 /* Assets.xcassets in Resources */,
 				4169B8882250E90C00F6E9AA /* MapView_iPad.xib in Resources */,
 				41D317E922671F5000DB41A7 /* ChartView_iPad.xib in Resources */,
@@ -894,7 +915,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		005DEF0142BB362F496231C4 /* [CP] Check Pods Manifest.lock */ = {
+		07415B0943F6CB1A968D47B0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -925,7 +946,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		B5585BDCA68B260F24DE0274 /* [CP] Embed Pods Frameworks */ = {
+		8EE417B85D889C539973154C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -955,7 +976,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicControlLOC/Pods-MedicControlLOC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F1EC15C79923C142308AF323 /* [CP] Check Pods Manifest.lock */ = {
+		EE99A580B936A514638E70D5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -994,6 +1015,7 @@
 				41013D6221A46AED00103513 /* HomeUserRouter.swift in Sources */,
 				4169B8B12253537500F6E9AA /* MedicinesModelEntity.swift in Sources */,
 				4169B8D62253A6BC00F6E9AA /* CameraQRPresenter.swift in Sources */,
+				41BA02F1231DC31C004415B3 /* RSSTableViewCell.swift in Sources */,
 				41D317F5226BD00C00DB41A7 /* LineChartFormatter.swift in Sources */,
 				4169B8BD2253867B00F6E9AA /* MedicineModel.swift in Sources */,
 				41778056219DC9C500901EB0 /* LoginDTO.swift in Sources */,
@@ -1020,8 +1042,10 @@
 				4169B88A2250E90C00F6E9AA /* MapRouter.swift in Sources */,
 				41013D6521A46AED00103513 /* HomeUserPresenter.swift in Sources */,
 				4169B8ED22554F6B00F6E9AA /* MedicinesDetailModel.swift in Sources */,
+				413D49602321B64500EF12EB /* NewsProvider.swift in Sources */,
 				4169B8D52253A6BC00F6E9AA /* CameraQRView.swift in Sources */,
 				41778032219DC8C600901EB0 /* UIView+Extension.swift in Sources */,
+				413D495E23217E1100EF12EB /* NewsModel.swift in Sources */,
 				4169B8B22253537500F6E9AA /* MedicinesAssembly.swift in Sources */,
 				41778035219DC8C600901EB0 /* Bundle+Extension.swift in Sources */,
 				4169B8D42253A6BC00F6E9AA /* CameraQRRouter.swift in Sources */,
@@ -1112,7 +1136,7 @@
 /* Begin XCBuildConfiguration section */
 		412910C721A32EAB00D38E61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF11B7877145B58469121C84 /* Pods-Widget.debug.xcconfig */;
+			baseConfigurationReference = F639F4BC11BA19950FBADB60 /* Pods-Widget.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1134,7 +1158,7 @@
 		};
 		412910C821A32EAB00D38E61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F3D1099E5AAA6777F801376 /* Pods-Widget.release.xcconfig */;
+			baseConfigurationReference = DE1E3F7FC75A9A1CBF3AC120 /* Pods-Widget.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -1272,7 +1296,7 @@
 		};
 		419464D2218471F100D86426 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19E0852FF3C717B26B244B39 /* Pods-MedicControlLOC.debug.xcconfig */;
+			baseConfigurationReference = 09D4F5853D783644FCD5A7EF /* Pods-MedicControlLOC.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1296,7 +1320,7 @@
 		};
 		419464D3218471F100D86426 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB6AB619919907201A58826C /* Pods-MedicControlLOC.release.xcconfig */;
+			baseConfigurationReference = 4BEE9DB4B1EDF5FB2D9DBE0C /* Pods-MedicControlLOC.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

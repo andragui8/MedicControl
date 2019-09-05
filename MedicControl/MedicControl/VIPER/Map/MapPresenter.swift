@@ -82,7 +82,7 @@ final class MapPresenter: BasePresenter<MapView, MapRouterProtocol, MapInteracto
             for pharmacy in pharmaciesModel {
                 listPharmacyAnnotations.append(PharmacyAnnotation(coordinate: CLLocationCoordinate2D(latitude: pharmacy.latitude,
                                                                                                      longitude: pharmacy.longitude),
-                                                                  title: pharmacy.name, subtitle: pharmacy.key))
+                                                                  title: pharmacy.key.uppercased(), subtitle: pharmacy.name))
             }
             self.view?.mapView.addAnnotations(listPharmacyAnnotations)
         })
