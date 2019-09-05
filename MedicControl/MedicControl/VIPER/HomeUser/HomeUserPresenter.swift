@@ -15,6 +15,7 @@ protocol HomeUserPresenterProtocol: AnyObject {
 	var newsObject: [NewsModel]? { get set }
     func homeUserViewDidLoad()
     func closeSession()
+	func goToNewsDetail(row: Int)
 }
 
 final class HomeUserPresenter: BasePresenter<HomeUserView, HomeUserRouterProtocol, HomeUserInteractorProtocol>, HomeUserPresenterProtocol {
@@ -28,6 +29,10 @@ final class HomeUserPresenter: BasePresenter<HomeUserView, HomeUserRouterProtoco
     internal func closeSession() {
         self.closeSessionAction()
     }
+	
+	internal func goToNewsDetail(row: Int) {
+		self.goToNewsDetailAction(row: row)
+	}
     // MARK: Fileprivate functions declaration of all functions that return something to the protocol or perform an activity that should not be exposed
     fileprivate func homeUserViewDidLoadAction() {
 		self.interactor?.getNews(success: { response in
@@ -43,4 +48,10 @@ final class HomeUserPresenter: BasePresenter<HomeUserView, HomeUserRouterProtoco
     fileprivate func closeSessionAction() {
         self.router?.closeSession()
     }
+	
+	fileprivate func goToNewsDetailAction(row: Int) {
+		let newsDto = NewsDetailDTO(title: self.newsObject?[row].titulo,
+									text: self.newsObject?[row].texto)
+		self.router?.goToNewDetail(dto: newsDto)
+	}
 }

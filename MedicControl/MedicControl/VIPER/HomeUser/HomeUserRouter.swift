@@ -12,6 +12,7 @@ import UIKit
 protocol HomeUserRouterProtocol: AnyObject {
     func presentDetailView()
     func closeSession()
+	func goToNewDetail(dto: NewsDetailDTO)
 }
 
 final class HomeUserRouter: BaseRouter<HomeUserPresenterProtocol, HomeUserView>, HomeUserRouterProtocol {
@@ -26,4 +27,8 @@ final class HomeUserRouter: BaseRouter<HomeUserPresenterProtocol, HomeUserView>,
         appDelegate.navigationController?.popToRootViewController(animated: false)
         
     }
+	
+	internal func goToNewDetail(dto: NewsDetailDTO) {
+		self.view?.navigationController?.pushViewController(NewsDetailAssembly.newsDetailPresenterView(newsDetailDTO: dto), animated: true)
+	}
 }

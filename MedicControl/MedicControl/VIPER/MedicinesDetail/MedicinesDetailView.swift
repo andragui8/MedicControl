@@ -47,7 +47,7 @@ extension MedicinesDetailView: BaseViewControllerRefresh {
     }
     
     func i18N() {
-        self.title = "MedicinesDetail"
+        self.title = "Detalle"
     }
     
     func initializeUI() {

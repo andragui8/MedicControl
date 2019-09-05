@@ -24,6 +24,16 @@
 		412F9CAE224E8154006C0F0B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F9CAC224E8154006C0F0B /* TabBarViewController.swift */; };
 		413D495E23217E1100EF12EB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D495D23217E1100EF12EB /* NewsModel.swift */; };
 		413D49602321B64500EF12EB /* NewsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D495F2321B64500EF12EB /* NewsProvider.swift */; };
+		413D497B2321C4B500EF12EB /* NewsDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D496F2321C4B500EF12EB /* NewsDetailDTO.swift */; };
+		413D497C2321C4B500EF12EB /* NewsDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D49702321C4B500EF12EB /* NewsDetailAssembly.swift */; };
+		413D497D2321C4B500EF12EB /* NewsDetailView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413D49722321C4B500EF12EB /* NewsDetailView_iPad.xib */; };
+		413D497E2321C4B500EF12EB /* NewsDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 413D49732321C4B500EF12EB /* NewsDetailView.xib */; };
+		413D497F2321C4B500EF12EB /* NewsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D49742321C4B500EF12EB /* NewsDetailPresenter.swift */; };
+		413D49802321C4B500EF12EB /* NewsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D49752321C4B500EF12EB /* NewsDetailInteractor.swift */; };
+		413D49812321C4B500EF12EB /* NewsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D49772321C4B500EF12EB /* NewsDetailModel.swift */; };
+		413D49822321C4B500EF12EB /* NewsDetailModelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D49782321C4B500EF12EB /* NewsDetailModelEntity.swift */; };
+		413D49832321C4B500EF12EB /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D49792321C4B500EF12EB /* NewsDetailView.swift */; };
+		413D49842321C4B500EF12EB /* NewsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D497A2321C4B500EF12EB /* NewsDetailRouter.swift */; };
 		4169B8872250E90C00F6E9AA /* MapDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4169B87B2250E90C00F6E9AA /* MapDTO.swift */; };
 		4169B8882250E90C00F6E9AA /* MapView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4169B87D2250E90C00F6E9AA /* MapView_iPad.xib */; };
 		4169B8892250E90C00F6E9AA /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4169B87E2250E90C00F6E9AA /* MapView.xib */; };
@@ -174,6 +184,16 @@
 		412F9CAC224E8154006C0F0B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		413D495D23217E1100EF12EB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		413D495F2321B64500EF12EB /* NewsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsProvider.swift; sourceTree = "<group>"; };
+		413D496F2321C4B500EF12EB /* NewsDetailDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailDTO.swift; sourceTree = "<group>"; };
+		413D49702321C4B500EF12EB /* NewsDetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailAssembly.swift; sourceTree = "<group>"; };
+		413D49722321C4B500EF12EB /* NewsDetailView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsDetailView_iPad.xib; sourceTree = "<group>"; };
+		413D49732321C4B500EF12EB /* NewsDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsDetailView.xib; sourceTree = "<group>"; };
+		413D49742321C4B500EF12EB /* NewsDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailPresenter.swift; sourceTree = "<group>"; };
+		413D49752321C4B500EF12EB /* NewsDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailInteractor.swift; sourceTree = "<group>"; };
+		413D49772321C4B500EF12EB /* NewsDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailModel.swift; sourceTree = "<group>"; };
+		413D49782321C4B500EF12EB /* NewsDetailModelEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailModelEntity.swift; sourceTree = "<group>"; };
+		413D49792321C4B500EF12EB /* NewsDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		413D497A2321C4B500EF12EB /* NewsDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailRouter.swift; sourceTree = "<group>"; };
 		4169B87B2250E90C00F6E9AA /* MapDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDTO.swift; sourceTree = "<group>"; };
 		4169B87D2250E90C00F6E9AA /* MapView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView_iPad.xib; sourceTree = "<group>"; };
 		4169B87E2250E90C00F6E9AA /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
@@ -371,6 +391,47 @@
 				412F9CAC224E8154006C0F0B /* TabBarViewController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		413D496D2321C4B500EF12EB /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				413D496E2321C4B500EF12EB /* DTO */,
+				413D49712321C4B500EF12EB /* XIB */,
+				413D49702321C4B500EF12EB /* NewsDetailAssembly.swift */,
+				413D49742321C4B500EF12EB /* NewsDetailPresenter.swift */,
+				413D49792321C4B500EF12EB /* NewsDetailView.swift */,
+				413D49752321C4B500EF12EB /* NewsDetailInteractor.swift */,
+				413D497A2321C4B500EF12EB /* NewsDetailRouter.swift */,
+				413D49762321C4B500EF12EB /* Models */,
+			);
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		413D496E2321C4B500EF12EB /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				413D496F2321C4B500EF12EB /* NewsDetailDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		413D49712321C4B500EF12EB /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				413D49722321C4B500EF12EB /* NewsDetailView_iPad.xib */,
+				413D49732321C4B500EF12EB /* NewsDetailView.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		413D49762321C4B500EF12EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				413D49772321C4B500EF12EB /* NewsDetailModel.swift */,
+				413D49782321C4B500EF12EB /* NewsDetailModelEntity.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4169B8792250E90C00F6E9AA /* Map */ = {
@@ -603,6 +664,7 @@
 		4177801A219DC8C600901EB0 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				413D496D2321C4B500EF12EB /* NewsDetail */,
 				41D317DA22671F5000DB41A7 /* Chart */,
 				4169B8DA22554F6B00F6E9AA /* MedicinesDetail */,
 				4169B8C02253A6BC00F6E9AA /* CameraQR */,
@@ -896,6 +958,7 @@
 				41D317EA22671F5000DB41A7 /* ChartView.xib in Resources */,
 				4177802B219DC8C600901EB0 /* LaunchScreen.storyboard in Resources */,
 				4169B8B92253540900F6E9AA /* MedicinesTableViewCell.xib in Resources */,
+				413D497E2321C4B500EF12EB /* NewsDetailView.xib in Resources */,
 				4169B8922251FB9500F6E9AA /* GoogleService-Info.plist in Resources */,
 				41013D5F21A46AED00103513 /* HomeUserView.xib in Resources */,
 				4169B8EA22554F6B00F6E9AA /* MedicinesDetailView.xib in Resources */,
@@ -906,6 +969,7 @@
 				41D317E922671F5000DB41A7 /* ChartView_iPad.xib in Resources */,
 				4169B8892250E90C00F6E9AA /* MapView.xib in Resources */,
 				41013D5E21A46AED00103513 /* HomeUserView_iPad.xib in Resources */,
+				413D497D2321C4B500EF12EB /* NewsDetailView_iPad.xib in Resources */,
 				41778059219DC9C500901EB0 /* LoginView_iPad.xib in Resources */,
 				4169B8E922554F6B00F6E9AA /* MedicinesDetailView_iPad.xib in Resources */,
 				4169B8CF2253A6BC00F6E9AA /* CameraQRView_iPad.xib in Resources */,
@@ -1009,6 +1073,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413D49802321C4B500EF12EB /* NewsDetailInteractor.swift in Sources */,
 				4169B89822520A8100F6E9AA /* PharmacyModel.swift in Sources */,
 				4169B8AB2253537400F6E9AA /* MedicinesDTO.swift in Sources */,
 				41778045219DC8C600901EB0 /* AppDelegate.swift in Sources */,
@@ -1025,7 +1090,9 @@
 				4169B8D22253A6BC00F6E9AA /* CameraQRModelEntity.swift in Sources */,
 				4169B8F122554F6B00F6E9AA /* MedicinesDetailPresenter.swift in Sources */,
 				41778041219DC8C600901EB0 /* BasePresenter.swift in Sources */,
+				413D49812321C4B500EF12EB /* NewsDetailModel.swift in Sources */,
 				4169B88E2250E90C00F6E9AA /* MapModelEntity.swift in Sources */,
+				413D49832321C4B500EF12EB /* NewsDetailView.swift in Sources */,
 				4169B8AE2253537400F6E9AA /* MedicinesInteractor.swift in Sources */,
 				41D317EC22671F5000DB41A7 /* ChartAssembly.swift in Sources */,
 				41D317EF22671F5000DB41A7 /* ChartModelEntity.swift in Sources */,
@@ -1033,19 +1100,23 @@
 				4177805C219DC9C500901EB0 /* LoginModelEntity.swift in Sources */,
 				4169B88D2250E90C00F6E9AA /* MapView.swift in Sources */,
 				4169B8B02253537500F6E9AA /* MedicinesModel.swift in Sources */,
+				413D497B2321C4B500EF12EB /* NewsDetailDTO.swift in Sources */,
 				41778037219DC8C600901EB0 /* UIViewController+Extension.swift in Sources */,
 				4169B8E822554F6B00F6E9AA /* MedicinesDetailDTO.swift in Sources */,
 				4177802D219DC8C600901EB0 /* UIImageView+Extension.swift in Sources */,
 				412F9CAE224E8154006C0F0B /* TabBarViewController.swift in Sources */,
 				41778057219DC9C500901EB0 /* LoginAssembly.swift in Sources */,
 				4177803F219DC8C600901EB0 /* BaseInteractor.swift in Sources */,
+				413D49842321C4B500EF12EB /* NewsDetailRouter.swift in Sources */,
 				4169B88A2250E90C00F6E9AA /* MapRouter.swift in Sources */,
 				41013D6521A46AED00103513 /* HomeUserPresenter.swift in Sources */,
 				4169B8ED22554F6B00F6E9AA /* MedicinesDetailModel.swift in Sources */,
 				413D49602321B64500EF12EB /* NewsProvider.swift in Sources */,
+				413D497C2321C4B500EF12EB /* NewsDetailAssembly.swift in Sources */,
 				4169B8D52253A6BC00F6E9AA /* CameraQRView.swift in Sources */,
 				41778032219DC8C600901EB0 /* UIView+Extension.swift in Sources */,
 				413D495E23217E1100EF12EB /* NewsModel.swift in Sources */,
+				413D497F2321C4B500EF12EB /* NewsDetailPresenter.swift in Sources */,
 				4169B8B22253537500F6E9AA /* MedicinesAssembly.swift in Sources */,
 				41778035219DC8C600901EB0 /* Bundle+Extension.swift in Sources */,
 				4169B8D42253A6BC00F6E9AA /* CameraQRRouter.swift in Sources */,
@@ -1078,6 +1149,7 @@
 				4177805F219DC9C500901EB0 /* LoginRouter.swift in Sources */,
 				4169B8AF2253537400F6E9AA /* MedicinesPresenter.swift in Sources */,
 				4169B89A2252107200F6E9AA /* MapProvider.swift in Sources */,
+				413D49822321C4B500EF12EB /* NewsDetailModelEntity.swift in Sources */,
 				4169B8F6225DEAF200F6E9AA /* Session.swift in Sources */,
 				4169B88F2250E90C00F6E9AA /* MapModel.swift in Sources */,
 				4169B8872250E90C00F6E9AA /* MapDTO.swift in Sources */,

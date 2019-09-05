@@ -57,6 +57,10 @@ class HomeUserView: BaseView<HomeUserPresenterProtocol>, UITableViewDelegate, UI
 		newsCell.configureCell(news: self.presenter?.newsObject?[indexPath.row])
 		return newsCell
 	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		self.presenter?.goToNewsDetail(row: indexPath.row)
+	}
     // MARK: Private Functions
 }
 

@@ -18,4 +18,5 @@ public enum XibFile: String {
     case cameraQRView = "CameraQRView"
     case medicinesDetailView = "MedicinesDetailView"
     case chartView = "ChartView"
+	case newsDetailView = "NewsDetailView"
 }
